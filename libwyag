@@ -12,3 +12,7 @@ import os
 import re
 import zlib
 
+argparser = argparse.ArgumentParser(description="The stupidest content tracker")
+
+argsubparsers = argparser.add_subparsers(title="Commands", dest="command")
+argsubparsers.required = True
