@@ -7,7 +7,7 @@ except ModuleNotFoundError:
     pass # These modules are not available on Windows
 from fnmatch import fnmatch
 import hashlib
-from math import cell
+from math import ceil
 import os
 import re
 import zlib
