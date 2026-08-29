@@ -1,15 +1,24 @@
 import argparse
+
 import configparser
+
 from datetime import datetime
+
 try:
     import grp, pwd
 except ModuleNotFoundError:
     pass # These modules are not available on Windows
+
 from fnmatch import fnmatch
+
 import hashlib
+
 from math import ceil
+
 import os
+
 import re
+
 import zlib
 
 argparser = argparse.ArgumentParser(description="The stupidest content tracker")
@@ -36,3 +45,4 @@ def main(argv=sys.argv[1:]):
         case "status"       : cmd_status(args)
         case "tag"          : cmd_tag(args)
         case _              : print("Bad command.")
+
